@@ -3,7 +3,7 @@ import classes from './App.module.scss'
 import {Link, Outlet} from "react-router-dom";
 import cat from '@shared/assets/cat.jpg'
 import Alien from '@shared/assets/alien-svgrepo-com.svg'
-import Button from "@shared/Button/ui/Button";
+import Button from "@shared/ui/Button";
 
 const App = () => {
     const [count, setCount] = useState(0)
