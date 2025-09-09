@@ -9,7 +9,7 @@ export function buildWebpack(options: BuildOptions): webpack.Configuration {
     const {mode, port, paths, isDev} = options;
 
     return {
-        mode: mode  ?? "development",
+        mode: mode ?? "development",
 
         entry: paths.entry,
 

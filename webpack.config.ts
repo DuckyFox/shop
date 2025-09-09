@@ -28,7 +28,7 @@ export default (env:EnvVariables):Configuration => {
         isDev: env.mode === 'development',
     }
 
-    console.log(env.mode)
+    console.log(options.isDev)
 
     return buildWebpack(options)
 }
