@@ -1,14 +1,15 @@
 import {useState} from 'react';
-import classes from './ui/App.module.scss'
 import {Link, Outlet} from "react-router-dom";
-import cat from '@shared/assets/cat.jpg'
-import Alien from '@shared/assets/alien-svgrepo-com.svg'
-import Button from "@shared/ui/Button";
+import './styles/global.scss'
+import {classNames} from "@shared/lib";
+import {useAppSelector} from "@app/hooksRTK/hooksRTK";
+import {themeSelector} from "@entities/Theme";
 
 const App = () => {
+    const theme = useAppSelector(themeSelector)
     const [count, setCount] = useState(0)
     return (
-        <div data-testid='check' className="app">
+        <div className={classNames("app", {}, [`${theme}`])}>
             <Link to={'/'}>home</Link>
             <Link to={'/about'}>about</Link>
             <Outlet/>
