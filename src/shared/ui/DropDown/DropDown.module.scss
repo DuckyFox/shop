@@ -1,0 +1,28 @@
+.dropDown {
+  position: absolute;
+  bottom: 100%;
+  left: 100%;
+  margin-left: 8px;
+  margin-bottom: 8px;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--primary-color);
+  color: var(--inverted-color);
+  border-radius: 6px;
+
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(0px) scaleY(0.8);
+  transform-origin: bottom;
+  transition: all 0.25s ease-in-out;
+  z-index: 1000;
+}
+
+.isShow {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scaleY(1);
+}

@@ -1,25 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44.02 44.02">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: none;
-      }
-
-      .cls-1, .cls-2 {
-        stroke: #0d0d28;
-        stroke-miterlimit: 10;
-      }
-
-      .cls-2 {
-        fill: #0d0d28;
-      }
-    </style>
-  </defs>
-  <g id="Layer_1-2" data-name="Layer 1">
-    <g>
-      <circle class="cls-1" cx="22.01" cy="22.01" r="21.51"/>
-      <path class="cls-2" d="M18.69,24.94c-3.79-4.36-4.12-10.62-1.35-15.74-1.44.55-2.81,1.34-4.04,2.41-5.67,4.92-6.28,13.51-1.35,19.18,4.92,5.67,13.51,6.27,19.18,1.35,1.23-1.07,2.21-2.32,2.96-3.66-5.46,2.03-11.61.82-15.4-3.54Z"/>
-    </g>
-  </g>
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_41_18)">
+<path d="M20 1C30.4933 1 39 9.50659 39 20C39 30.4933 30.4933 39 20 39C9.50659 39 1 30.4933 1 20C1 9.50658 9.50658 1 20 1Z" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16.0615 7C14.7565 9.02657 14 11.4397 14 14.0293C14 21.2089 19.8203 27.0293 27 27.0293C28.748 27.0293 30.415 26.6833 31.9375 26.0576C29.6243 29.6499 25.5902 32.0293 21 32.0293C13.8203 32.0293 8 26.2089 8 19.0293C8 13.5978 11.3309 8.94416 16.0615 7Z" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_41_18">
+<rect width="40" height="40" fill="white"/>
+</clipPath>
+</defs>
 </svg>

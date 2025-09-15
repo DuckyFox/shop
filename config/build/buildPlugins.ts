@@ -23,7 +23,7 @@ export function buildPlugins(options:BuildOptions):webpack.WebpackPluginInstance
         new ForkTsCheckerWebpackPlugin(),
         new copyWebpackPlugin({
             patterns: [
-                {from: path.resolve(options.paths.public, "locales"), to: path.resolve(options.paths.output, "locales")},
+                {from: path.resolve(options.paths.public, "Locales"), to: path.resolve(options.paths.output, "Locales")},
             ]
         })
     ]

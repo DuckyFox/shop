@@ -47,4 +47,9 @@ declare module '*.ttf' {
     export default src;
 }
 
+declare module '*.json' {
+    const value: { [key: string]: string };
+    export default value;
+}
+
 declare const __IS_DEV__: boolean;
