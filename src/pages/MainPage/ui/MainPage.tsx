@@ -5,7 +5,6 @@ const MainPage = () => {
     return (
         <div>
             MainPage
-            <ThemeSwitcher/>
         </div>
     );
 };

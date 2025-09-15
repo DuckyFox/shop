@@ -1,0 +1,23 @@
+.header{
+  background-color: var(--primary-color);
+  color: var(--inverted-color);
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo{
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+}
+
+.navigation{
+  display: flex;
+  color: var(--inverted-color);
+  column-gap: 15px;
+}
