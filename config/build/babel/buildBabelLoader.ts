@@ -3,9 +3,7 @@ import {BuildOptions} from "../types/types";
 
 
 const buildBabelLoader = (options: BuildOptions) => {
-    const plugins: (string | [any, object])[] = [
-        "i18next-extract"
-    ];
+    const plugins = []
 
     if (options.mode === 'production') plugins.push([removeDataTestIdBabelPlugin, {props: ['data-testid']}]);
 

@@ -1,9 +1,14 @@
 import { type Configuration } from "webpack";
 import { type Configuration as DevServerConfiguration } from "webpack-dev-server";
-import {buildWebpack} from "./config/build/buildWebpack";
-import {BuildOptions, BuildPath} from "./config/build/types/types";
-import {BuildMode} from "./config/build/types/types";
-import path from "node:path";
+import {buildWebpack} from "./config/build/buildWebpack.ts";
+import type {BuildOptions, BuildPath} from "./config/build/types/types.ts";
+import type {BuildMode} from "./config/build/types/types.ts";
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+// Определяем __filename и __dirname
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 interface EnvVariables {
     mode: BuildMode;

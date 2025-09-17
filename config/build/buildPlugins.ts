@@ -1,7 +1,7 @@
 import webpack from "webpack";
 import htmlWebpackPlugin from "html-webpack-plugin";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
-import {BuildOptions} from "./types/types";
+import type {BuildOptions} from "./types/types.ts";
 import {BundleAnalyzerPlugin} from "webpack-bundle-analyzer";
 import ForkTsCheckerWebpackPlugin from "fork-ts-checker-webpack-plugin";
 import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin';
