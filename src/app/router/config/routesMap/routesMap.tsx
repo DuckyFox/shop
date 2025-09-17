@@ -1,22 +1,22 @@
-import App from "@app/App";
-import {AboutPage} from "@pages/AboutPage";
-import {MainPage} from "@pages/MainPage";
-import {NotFoundPage} from "@pages/NotFoundPage";
+import App from '@app/App';
+import { AboutPage } from '@pages/AboutPage';
+import { MainPage } from '@pages/MainPage';
+import { NotFoundPage } from '@pages/NotFoundPage';
 
 export const routesMap = [
     {
-        path: "/",
+        path: '/',
         element: <App/>,
         errorElement: <NotFoundPage/>,
         children: [
             {
                 index: true,
-                element: <MainPage/>
+                element: <MainPage/>,
             },
             {
-                path: "/about",
-                element: <AboutPage/>
-            }
-        ]
-    }
-]
+                path: '/about',
+                element: <AboutPage/>,
+            },
+        ],
+    },
+];

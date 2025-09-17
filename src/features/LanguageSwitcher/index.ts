@@ -1,3 +1,3 @@
-import LanguageSwitcher from "@features/LanguageSwitcher/ui/LanguageSwitcher";
+import LanguageSwitcher from '@features/LanguageSwitcher/ui/LanguageSwitcher';
 
 export { LanguageSwitcher };

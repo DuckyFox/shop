@@ -1,5 +1,5 @@
 import React from 'react';
-import {ThemeSwitcher} from "@features/ThemeSwitcher";
+import { ThemeSwitcher } from '@features/ThemeSwitcher';
 
 const MainPage = () => {
     return (

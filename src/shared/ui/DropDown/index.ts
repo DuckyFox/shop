@@ -1,3 +1,3 @@
-import DropDown from "@shared/ui/DropDown/DropDown";
+import DropDown from '@shared/ui/DropDown/DropDown';
 
 export { DropDown };

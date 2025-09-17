@@ -1,6 +1,6 @@
-import {FC, ReactNode} from "react";
-import {classNames} from "@shared/lib";
-import cls from './DropDown.module.scss'
+import { FC, ReactNode } from 'react';
+import { classNames } from '@shared/lib';
+import cls from './DropDown.module.scss';
 
 interface DropDownProps {
     className?: string;
@@ -14,10 +14,10 @@ const DropDown:FC<DropDownProps> = (props) => {
         showStatus,
         children,
         ...otherProps
-    } = props
+    } = props;
 
     return (
-        <div className={classNames(cls.dropDown, {[cls.isShow]: showStatus}, [className])}>
+        <div className={classNames(cls.dropDown, { [cls.isShow]: showStatus }, [className])}>
             {children}
         </div>
     );

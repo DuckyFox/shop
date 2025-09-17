@@ -1,5 +1,5 @@
-import Button from "@shared/ui/Button/Button";
+import Button from '@shared/ui/Button/Button';
 
 export {
     Button,
-}
+};

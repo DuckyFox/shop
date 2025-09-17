@@ -1,5 +1,5 @@
-import {createSlice, PayloadAction} from "@reduxjs/toolkit";
-import {RootState} from "@app/store/store";
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { RootState } from '@app/store/store';
 
 export interface ThemeSwitcherState {
     theme: 'light' | 'dark';
@@ -15,10 +15,10 @@ export const themeSLice = createSlice({
     reducers: {
         switchTheme: (state: ThemeSwitcherState) => {
             state.theme === 'light' ? state.theme = 'dark' : state.theme ='light';
-        }
-    }
-})
+        },
+    },
+});
 
-export const {switchTheme} = themeSLice.actions;
+export const { switchTheme } = themeSLice.actions;
 
 export default themeSLice.reducer;

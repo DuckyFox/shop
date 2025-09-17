@@ -1,14 +1,14 @@
-import {useAppDispatch, useAppSelector} from "@app/hooksRTK/hooksRTK";
-import {switchTheme, themeSelector} from "@/entities/Theme";
-import {Button} from "@shared/ui";
-import cls from './ThemeSwitcher.module.scss'
-import {ButtonTheme} from "@shared/ui/Button/Button";
-import SwitchThemeLightIcon from "@shared/assets/icons/SwitchThemeLightIcon.svg"
-import SwitchThemeDarkIcon from "@shared/assets/icons/SwitchThemeDarkIcon.svg"
+import { useAppDispatch, useAppSelector } from '@app/hooksRTK/hooksRTK';
+import { switchTheme, themeSelector } from '@/entities/Theme';
+import { Button } from '@shared/ui';
+import cls from './ThemeSwitcher.module.scss';
+import { ButtonTheme } from '@shared/ui/Button/Button';
+import SwitchThemeLightIcon from '@shared/assets/icons/SwitchThemeLightIcon.svg';
+import SwitchThemeDarkIcon from '@shared/assets/icons/SwitchThemeDarkIcon.svg';
 
 const ThemeSwitcher = () => {
 
-    const theme = useAppSelector(themeSelector)
+    const theme = useAppSelector(themeSelector);
     const dispatch = useAppDispatch();
 
     return (

@@ -1,4 +1,4 @@
-import {switchLanguage} from "./model/languageSlice";
-import {languageSelector} from "./model/selectors";
+import { switchLanguage } from './model/languageSlice';
+import { languageSelector } from './model/selectors';
 
-export {switchLanguage, languageSelector};
+export { switchLanguage, languageSelector };

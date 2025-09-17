@@ -10,11 +10,11 @@ export function removeDataTestIdBabelPlugin():PluginItem{
                     JSXIdentifier(current){
                         const nodeName = current.node.name;
                         if(forbiddenProps.includes(nodeName)){
-                            current.parentPath.remove()
+                            current.parentPath.remove();
                         }
-                    }
-                })
-            }
-        }
-    }
+                    },
+                });
+            },
+        },
+    };
 }

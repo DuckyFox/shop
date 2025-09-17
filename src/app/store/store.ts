@@ -1,13 +1,13 @@
-import { configureStore } from '@reduxjs/toolkit'
-import themeReducer from "@/entities/Theme/model/themeSlice";
-import languageReducer from "@/entities/Language/model/languageSlice";
+import { configureStore } from '@reduxjs/toolkit';
+import themeReducer from '@/entities/Theme/model/themeSlice';
+import languageReducer from '@/entities/Language/model/languageSlice';
 
 export const store = configureStore({
     reducer: {
         theme: themeReducer,
         language: languageReducer,
-    }
-})
+    },
+});
 
 // Infer the `RootState`,  `AppDispatch`, and `AppStore` types from the store itself
 export type RootState = ReturnType<typeof store.getState>

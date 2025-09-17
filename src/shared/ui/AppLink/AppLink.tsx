@@ -1,6 +1,6 @@
-import {NavLink, NavLinkProps} from "react-router-dom";
-import cls from './AppLink.module.scss'
-import {classNames} from "@shared/lib";
+import { NavLink, NavLinkProps } from 'react-router-dom';
+import cls from './AppLink.module.scss';
+import { classNames } from '@shared/lib';
 
 export enum AppLinkTheme {
     PRIMARY = 'primary',
@@ -19,7 +19,7 @@ const AppLink = (props: AppLinkProps) => {
         children,
         theme,
         ...otherProps
-    } = props
+    } = props;
     return (
         <NavLink to={to} className={classNames(cls.applink, {}, [className, cls[theme]])} {...otherProps}>
             {children}

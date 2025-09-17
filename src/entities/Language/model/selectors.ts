@@ -1,3 +1,3 @@
-import {RootState} from "@app/store/store";
+import { RootState } from '@app/store/store';
 
-export const languageSelector = (state: RootState) => state.language.language
+export const languageSelector = (state: RootState) => state.language.language;
