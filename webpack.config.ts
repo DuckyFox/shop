@@ -1,8 +1,8 @@
-import { type Configuration } from "webpack";
-import { type Configuration as DevServerConfiguration } from "webpack-dev-server";
-import {buildWebpack} from "./config/build/buildWebpack.ts";
-import type {BuildOptions, BuildPath} from "./config/build/types/types.ts";
-import type {BuildMode} from "./config/build/types/types.ts";
+import { type Configuration } from 'webpack';
+import { type Configuration as DevServerConfiguration } from 'webpack-dev-server';
+import { buildWebpack } from './config/build/buildWebpack.ts';
+import type { BuildOptions, BuildPath } from './config/build/types/types.ts';
+import type { BuildMode } from './config/build/types/types.ts';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -24,16 +24,16 @@ export default (env:EnvVariables):Configuration => {
         src: path.resolve(__dirname, 'src'),
         config: path.resolve(__dirname, 'config'),
         public: path.resolve(__dirname, 'public'),
-    }
+    };
 
     const options:BuildOptions = {
         mode: env.mode ?? 'development',
         port: env.port ?? 3000,
         paths: paths,
         isDev: env.mode === 'development',
-    }
+    };
 
-    console.log(options.isDev)
+    console.log(options.isDev);
 
-    return buildWebpack(options)
-}
+    return buildWebpack(options);
+};

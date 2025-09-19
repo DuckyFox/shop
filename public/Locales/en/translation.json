@@ -1,4 +1,10 @@
 {
+  "ByteHub": "ByteHub",
+  "Main": "Main",
   "test": "en",
-  "байтхаб": "bytehub"
+  "About": "About",
+  "404 Not Found": "404 Not Found",
+  "MainPage": "MainPage",
+  "Russian": "Русский",
+  "English": "English"
 }

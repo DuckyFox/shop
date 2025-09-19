@@ -35,9 +35,8 @@ const LanguageSwitcher = () => {
             </Button>
             <DropDown showStatus={dropDownShow}>
                 <div>
-                    <h3 onClick={()=>switchCurrentLanguage('ru')} className={cls.text}>Русский</h3>
-                    <h3 onClick={()=>switchCurrentLanguage('en')} className={cls.text}>English</h3>
-                    <h3 onClick={()=>switchCurrentLanguage('sr')} className={cls.text}>Српски</h3>
+                    <h3 onClick={()=>switchCurrentLanguage('ru')} className={cls.text}>{t('translation\:Russian')}</h3>
+                    <h3 onClick={()=>switchCurrentLanguage('en')} className={cls.text}>{t('translation\:English')}</h3>
                 </div>
             </DropDown>
         </div>

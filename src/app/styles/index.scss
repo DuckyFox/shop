@@ -4,17 +4,17 @@
 @forward "variables/global";
 
 .app {
-  font: var(--font-l);
-  background: var(--bg-color);
-  color: var(--primary-color);
-  min-height: 100vh;
+    font: var(--font-l);
+    background: var(--bg-color);
+    color: var(--primary-color);
+    min-height: 100vh;
 }
 
 .main{
-  display: flex;
+    display: flex;
 }
 
 .page{
-  flex-grow: 1;
-  padding: 20px;
+    flex-grow: 1;
+    padding: 20px;
 }

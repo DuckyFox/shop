@@ -18,7 +18,7 @@ const Header = () => {
         <header className={cls.header}>
             <div className={cls.logo}>
                 {theme === 'light' ? <ByteHybDarkMode style={{ width: 70, height: 70 }}/> : <ByteHybLightMode style={{ width: 70, height: 70 }}/>}
-                <h1>{t('translation\:test')}</h1>
+                <h1>{t('translation\:ByteHub')}</h1>
             </div>
             <NavMenu className={cls.navigation}/>
         </header>

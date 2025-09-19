@@ -3,7 +3,7 @@ import { RootState } from '@app/store/store';
 import { ThemeSwitcherState } from '@entities/Theme/model/themeSlice';
 
 export interface LanguageSwitcherState {
-    language: 'ru' | 'en' | 'sr';
+    language: 'ru' | 'en';
 }
 
 const initialState: LanguageSwitcherState = {

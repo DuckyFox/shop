@@ -1,30 +1,30 @@
 .sideBar {
-  background-color: var(--primary-color);
-  color: var(--inverted-color);
-  width: var(--sidebar-width);
-  height: calc(100vh - var(--header-height));
-  position: relative;
+    background-color: var(--primary-color);
+    color: var(--inverted-color);
+    width: var(--sidebar-width);
+    height: calc(100vh - var(--header-height));
+    position: relative;
 }
 
 .sideBar.collapsed {
-  width: var(--sidebar-width-collapsed);
+    width: var(--sidebar-width-collapsed);
 }
 
 .sideBarButtons {
-  position: absolute;
-  display: flex;
-  width: 100%;
-  bottom: 10px;
-  padding: 10px;
-  justify-content: space-between;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    bottom: 10px;
+    padding: 10px;
+    justify-content: space-between;
 }
 
 .sideBarButtons.collapsed {
-  position: absolute;
-  display: flex;
-  flex-direction: column-reverse;
-  bottom: 10px;
-  padding: 10px;
-  width: 40px;
-  row-gap: 10px;
+    position: absolute;
+    display: flex;
+    flex-direction: column-reverse;
+    bottom: 10px;
+    padding: 10px;
+    width: 40px;
+    row-gap: 10px;
 }
