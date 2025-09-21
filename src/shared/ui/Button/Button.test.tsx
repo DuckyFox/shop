@@ -1,16 +1,17 @@
 import { render, screen } from '@testing-library/react';
-import Button from './Button';
-import { ButtonTheme as Theme } from './Button';
+import { Button } from '@shared/ui';
+import { expect } from 'storybook/test';
+import { ButtonTheme } from '@shared/ui/Button/Button.tsx';
+
 describe('Button', () => {
-    test('render btn', ()=> {
-        // eslint-disable-next-line i18next/no-literal-string
-        render(<Button>Тест</Button>);
-        expect(screen.getByText('Тест')).toBeInTheDocument();
+    test('should render correctly', () => {
+        render(<Button>TEST</Button>);
+        expect(screen.getByText('TEST')).toBeInTheDocument();
     });
 
-    test('render btn with theme', ()=> {
-        // eslint-disable-next-line i18next/no-literal-string
-        render(<Button theme={Theme.CLEAR}>Тест</Button>);
-        expect(screen.getByText('Тест')).toHaveClass('clear');
+    test('should render with class `clear`', () => {
+        render(<Button theme={ButtonTheme.CLEAR}>TEST</Button>);
+        expect(screen.getByText('TEST')).toHaveClass('clear');
+        screen.debug();
     });
 });

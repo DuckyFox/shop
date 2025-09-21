@@ -11,9 +11,11 @@ const Sidebar = () => {
     console.log(collapsed);
     console.log([cls.collapsed]);
 
+
+
     return (
-        <div className={classNames(cls.sideBar, { [cls.collapsed]:collapsed }, [])}>
-            <SideBarSwitcher setCollapsed={setCollapsed}/>
+        <div data-testid={'sidebar'} className={classNames(cls.sideBar, { [cls.collapsed]:collapsed }, [])}>
+            <SideBarSwitcher setCollapsed={setCollapsed} />
             <div className={classNames(cls.sideBarButtons, { [cls.collapsed]:collapsed }, [])}>
                 <ThemeSwitcher />
                 <LanguageSwitcher />
