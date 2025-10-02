@@ -12,7 +12,7 @@ import reactHooks from 'eslint-plugin-react-hooks';
 
 export default defineConfig([
     {
-        files: ['**/*.{ts,tsx}'],g
+        files: ['**/*.{ts,tsx}'],
         plugins: { 'react-hooks': reactHooks },
         rules: {
             'react-hooks/rules-of-hooks': 'error',
