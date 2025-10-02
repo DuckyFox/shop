@@ -1,24 +1,24 @@
 import webpack from 'webpack';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
-import type {BuildOptions} from "./types/types.ts";
-import buildBabelLoader from "./babel/buildBabelLoader.ts";
+import type { BuildOptions } from './types/types.ts';
+import buildBabelLoader from './babel/buildBabelLoader.ts';
 
 export function buildLoaders(options: BuildOptions):webpack.RuleSetRule[] {
 
     const svgLoader = {
         test: /\.svg$/,
         use: [{
-                loader: '@svgr/webpack',
-                options: {
-                    icon: true,
-                },
-            }],
-    }
+            loader: '@svgr/webpack',
+            options: {
+                icon: true,
+            },
+        }],
+    };
 
     const assetLoader = {
-            test: /\.(png|jpg|jpeg|gif)$/i,
-            type: 'asset/resource',
-        }
+        test: /\.(png|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+    };
 
     const scssLoader = {
         test: /\.s[ac]ss$/i,
@@ -42,12 +42,12 @@ export function buildLoaders(options: BuildOptions):webpack.RuleSetRule[] {
         ],
     };
 
-    const babelLoader = buildBabelLoader(options)
+    const babelLoader = buildBabelLoader(options);
 
     return [
         babelLoader,
         svgLoader,
         assetLoader,
         scssLoader,
-    ]
+    ];
 }

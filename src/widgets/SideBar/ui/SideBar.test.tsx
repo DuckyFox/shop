@@ -1,8 +1,8 @@
-import {act, render, screen} from '@testing-library/react';
+import { act, render, screen } from '@testing-library/react';
 import { Sidebar } from '@widgets/SideBar';
 import { Provider } from 'react-redux';
 import { store } from '@app/store/store.ts';
-import {userEvent} from "storybook/test";
+import { userEvent } from 'storybook/test';
 
 describe('Sidebar', () => {
     test('Should render the Sidebar', () => {

@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Outlet } from 'react-router-dom';
-import './styles/index.scss';
 import { classNames } from '@shared/lib';
 import { useAppSelector } from '@app/hooksRTK/hooksRTK';
 import { themeSelector } from '@entities/Theme';

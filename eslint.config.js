@@ -8,8 +8,17 @@ import pluginReact from "eslint-plugin-react";
 import pluginReactHooks from "eslint-plugin-react-hooks";
 import { defineConfig } from "eslint/config";
 import i18nextPlugin from "eslint-plugin-i18next";
+import reactHooks from 'eslint-plugin-react-hooks';
 
 export default defineConfig([
+    {
+        files: ['**/*.{ts,tsx}'],g
+        plugins: { 'react-hooks': reactHooks },
+        rules: {
+            'react-hooks/rules-of-hooks': 'error',
+            'react-hooks/exhaustive-deps': 'error',
+        }
+    },
     {
         files: ["**/*.{ts,tsx}"],
         languageOptions: {

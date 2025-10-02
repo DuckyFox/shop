@@ -1,4 +1,5 @@
 import type { StorybookConfig } from '@storybook/react-webpack5';
+import path from 'node:path';
 
 const config: StorybookConfig = {
     'stories': [
@@ -12,18 +13,19 @@ const config: StorybookConfig = {
         'name': '@storybook/react-webpack5',
         'options': {},
     },
-    /*   webpackFinal: async (config, { configType }) => {
-        const paths: BuildPath = {
-            build: '',
-            html: '',
-            entry: '',
-            static: '',
-            src: path.resolve(__dirname, '..', '..', 'src'),
-        };
-        config.resolve.modules.push(paths.src);
-        config.resolve.extensions.push('.ts', '.tsx');
-        config.module.rules.push(buildCssLoader(true));
+    webpackFinal: async (config) => {
+        if (config.resolve) {
+            config.resolve.alias = {
+                ...config.resolve.alias,
+                '@shared': path.resolve(__dirname, '../../src/shared'),
+                '@widgets': path.resolve(__dirname, '../../src/widgets'),
+                '@entities': path.resolve(__dirname, '../../src/entities'),
+                '@features': path.resolve(__dirname, '../../src/features'),
+                '@pages': path.resolve(__dirname, '../../src/pages'),
+                '@app': path.resolve(__dirname, '../../src/app'),
+            };
+        }
         return config;
-    },*/
+    },
 };
 export default config;
